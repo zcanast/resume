@@ -1,4 +1,4 @@
-# autoCV
+<!-- # autoCV
 
 A clean CV template in LaTeX along with a GitHub action that complies the `*.tex` file and publishes a new PDF version when new changes are pushed to the repo
 
@@ -45,3 +45,4 @@ PS: If you liked the template, do star :star: it! Thanks!
 - [gradfolio](https://github.com/jitinnair1/gradfolio) - a minimal, quick-setup template for a personal website/portfolio
 - [Tail](https://github.com/jitinnair1/tail) - a minimal, quick-setup template for a blog
 
+ -->
