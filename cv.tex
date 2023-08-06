@@ -109,7 +109,9 @@
   \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
-
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+}
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -351,7 +353,8 @@ Bachelor of Science in Information Science & \hfill \\ %GPA: 3.62 \\
 \textbf{Technologies}  &  \normalsize{Excel, GitHub, Microsoft Office, Google Suite, WordPress, Tableau, Power BI, Gephi, Adobe Premiere Pro, Adobe Photoshop, Figma, Canva}\\ 
 \textbf{Environments}  &  \normalsize{Visual Studio Code, Eclipse, MySQL, RStudio, Jupyter Notebooks}\\
 
-%\textbf{Languages} & \normalsize{
+\textbf{Languages} & \normalsize{\cvtag{Python}
+}\\
 %\tag{Python}
 %\tag{Java}
 %\tag{R} 
