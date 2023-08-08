@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -80,7 +80,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{6pt}{8pt}
+\titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
 %\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -98,17 +98,7 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-%for skills
-%\usepackage{tikz}
-
 % tag (framed word or phrase)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% adapted from AltaCV: https://github.com/liantze/AltaCV
-%\newcommand{\tag}[1]{%
-%  \tikz[baseline]\node[anchor=base, draw=body!30, rounded corners, inner xsep=1ex, inner ysep =0.75ex, text height=1.5ex, text depth=.25ex]{#1};
-%}
-
 \RequirePackage{tikz}
 \colorlet{body}{black!80!white}
 \newcommand{\tag}[1]{%
@@ -128,7 +118,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Zoey Anastasiadis} \\[7.0pt]
+\Huge{Zoey Anastasiadis} \\[7.5pt]
 \href{mailto:zcanast@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ zcanast@gmail.com} \ $|$ \ 
 \href{tel:+4432559921}{\raisebox{-0.05\height}\faMobile \ 443.255.9921} \ $|$ \ 
 \href{https://github.com/zcanast}{\raisebox{-0.05\height}\faGithub\ zcanast} \ $|$ \ 
