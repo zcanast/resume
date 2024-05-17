@@ -1,4 +1,4 @@
-https://zcanast.github.io/resume/cv.pdf
+[https://zcanast.github.io/resume/cv.pdf](https://zcanast.github.io/resume/resume.pdf)
 
 <!-- # autoCV
 
