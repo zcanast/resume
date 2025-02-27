@@ -26,13 +26,23 @@
 \usepackage{hyperref}
 \usepackage{fontawesome5}
 \usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{mathptmx} % Use Times-like font
 
 % Setup hyperref package, and colours for links
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=linkcolour,
+    linkcolor=linkcolour,
+    pdftitle={Zoey Anastasiadis Resume},
+    pdfauthor={Zoey Anastasiadis},
+    pdfsubject={Resume}
+}
 
 % Custom \section
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\scshape\raggedright\color{RoyalBlue}}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{12pt} % Increased spacing before and after sections
 
 % Define centered column type for tabularx
