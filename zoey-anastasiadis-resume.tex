@@ -16,7 +16,6 @@
 \usepackage{parskip} 	
 \usepackage{color}
 \usepackage{graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
 \usepackage{tabularx}
 \usepackage{enumitem}
@@ -27,6 +26,7 @@
 \usepackage{hyperref}
 \usepackage{fontawesome5}
 \usepackage{tikz}
+\usepackage{fontspec} % For custom fonts
 
 % Setup hyperref package, and colours for links
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
@@ -38,6 +38,9 @@
 
 % Define centered column type for tabularx
 \newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% Set main font to Times New Roman
+\setmainfont{Times New Roman}
 
 % Tag (framed word or phrase)
 \colorlet{body}{black!80!white}
@@ -78,7 +81,7 @@
 Stanley Black \& Decker | Remote \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep, leftmargin=1em, itemsep=1pt]
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=1pt, label=\textendash]
         \item 2-year long rotational leadership program with 4 different 6-month long IT rotations
         \item Co-lead of Sustainable Development Committee, member of Engagement Committee
     \end{itemize}
@@ -86,16 +89,12 @@ Stanley Black \& Decker | Remote \\[3.75pt]
 }\
 \end{tabularx}
 
-% Indented Rotations
+% Indented Rotations with extra space
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \hspace{1em}\textbf{4th Rotation: GenAI App Architecture} &  \hfill January 2025 - Present \\  
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[label=\textbullet, nosep, leftmargin=2em, itemsep=3pt]
-    % \begin{itemize}[label=\textbullet] % Default
-    % \begin{itemize}[label=\textendash] % Dash
-    % \begin{itemize}[label=\textasteriskcentered] % Asterisk
-    % \begin{itemize}[label=\textopenbullet] % Open circle
+    \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
         \item Skills used: GenAI, prompt engineering, app architecture, SQL, Excel (pivot tables), Snowflake, YAML
         \item Contribute to the optimization of Caspian Data Architecture to maximize business value, ensuring all Data, Artificial Intelligence (AI), and Application (App) assets are well-documented and discoverable, with 100\% of Semantic Models certified and documented in Ataccama
         \item Ensure adoption of Data, AI, and Robotic Process Automation/Business Process Management (RPA/BPM) for delivered assets, and deliver at least 5 Generative AI (Gen AI) applications, including Zenlytic and ChatSBD+, with a focus on developing an internal pro-code agentic system framework
@@ -106,11 +105,13 @@ Stanley Black \& Decker | Remote \\[3.75pt]
 }\
 \end{tabularx}
 
+\vspace{1em} % Extra space between experiences
+
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \hspace{1em}\textbf{3rd Rotation: Data Architect, Enterprise Data - Platform Engineering} &  \hfill July 2024 - January 2025 \\ 
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[label=\textendash, nosep, leftmargin=2em, itemsep=3pt]
+    \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
         \item Skills used: Jira, Snowflake, SQL, Python, dbt Cloud, Power BI, Power Query, Power Automate, AWS (WorkSpaces, Lambda, CloudWatch, Simple Notification Service, CloudShell)
         \item Calculated 8 KPIs through Snowflake SQL scripts and Python scripts calling the dbt Cloud API
         \item Created a Power BI dashboard of the KPIs for leadership to visualize usage trends, saving ~40 hours per month of data collection
@@ -122,11 +123,13 @@ Stanley Black \& Decker | Remote \\[3.75pt]
 }\
 \end{tabularx}
 
+\vspace{1em} % Extra space between experiences
+
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \hspace{1em}\textbf{2nd Rotation: Architecture Process Engineer, Enterprise Architecture} &  \hfill January 2024 - July 2024 \\ 
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[label=\textasteriskcentered, nosep, leftmargin=2em, itemsep=3pt]
+    \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
         \item Skills used: Ardoq, Azure AI, Power BI, Python (pandas, openpyxl, openai, box, langchain, json), Excel (pivot tables, graphs, complex nested formulas (IF, OR, AND, COUNTIF, XLOOKUP))
         \item Document the current state architecture for SBD capability areas using our Enterprise Architecture Tool, Ardoq
         \item Lead a campaign to establish data quality metrics by analyzing the quality levels of existing application and application instance data hosted in Ardoq and then creating data quality scores and a presentation plan for these scores
@@ -141,48 +144,19 @@ Stanley Black \& Decker | Remote \\[3.75pt]
 }\
 \end{tabularx}
 
+\vspace{1em} % Extra space between experiences
+
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \hspace{1em}\textbf{1st Rotation: Process Analyst, IT Process} &  \hfill July 2023 - January 2024 \\ 
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[label=\textopenbullet, nosep, leftmargin=2em, itemsep=3pt]
+    \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
         \item Skills used: Power BI, PowerPoint, Miro, Azure AI, Power Automate, SharePoint (lists), Excel (pivot tables, graphs (Paretos, Gantt charts), complex nested formulas (IF, OR, AND, SEARCH, FIND, ISNUMBER, COUNTIF, XLOOKUP), Power Query, macros/VBA)
         \item Conduct comprehensive data analysis of existing lessons learned data using Excel, Power BI, Azure AI, and Miro to identify trends and opportunities for process and project improvements
         \item Propose a LEAN repeatable process for regular analysis of lessons learned data, resulting in biannual reports that provide valuable insights for optimizing processes and projects
         \item Determine the biggest project change reasons (PCRs) using Excel analysis of PPM data, enabling proactive measures to mitigate risks and enhance project outcomes
         \item Perform data analysis tasks as required, employing various tools and techniques to extract meaningful insights and support decision-making processes
         \item Utilize data-driven presentations to initiate and facilitate discussions on findings, opportunities, and actionable recommendations, fostering a culture of evidence-based decision-making
-    \end{itemize}
-    \end{minipage}
-}\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{iSchool Undergraduate Assistant for Research Programs} &  \hfill January 2022 - May 2023 \\ 
-University of Maryland, College of Information Studies | College Park, MD \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item Facilitate research-related communications for the Associate Dean of Research through various channels
-        \item Gather, analyze, and interpret research-related data, and prepare Excel reports for effective decision-making
-        \item Update websites using WordPress and maintain high-quality online resources through regular quality assurance checks
-        \item Execute research-related events and projects and configure video conferencing for meetings and presentations
-    \end{itemize}
-    \end{minipage}
-}\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Technology Intern} &  \hfill June 2022 - August 2022 \\
-Stanley Black \& Decker | Remote \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item Coordinate and manage 9 training sessions for 450+ IT employees, utilizing Excel to monitor enrollment and attendance
-        \item Produce engaging explainer videos using Powtoon for each IT role to facilitate employee onboarding and training
-        \item Design Mentimeter questionnaires for training sessions and analyze live polling results to enhance training effectiveness
-        \item Collect, interpret, and present data from questionnaires in a visually compelling format to create reports
-        \item Maintain SharePoint site to disseminate communications throughout the organization
     \end{itemize}
     \end{minipage}
 }\
