@@ -1,0 +1,231 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage{url}
+\usepackage{parskip} 	
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tikz}
+
+% Setup hyperref package, and colours for links
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+% Custom \section
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{8pt}
+
+% Tag (framed word or phrase)
+\colorlet{body}{black!80!white}
+\newcommand{\tag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% Non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Zoey Anastasiadis} \\[7.0pt]
+\href{mailto:zcanast@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ zcanast@gmail.com} \ $|$ \ 
+\href{tel:+4432559921}{\raisebox{-0.05\height}\faMobile \ 443.255.9921} \ $|$ \ 
+\href{https://github.com/zcanast}{\raisebox{-0.05\height}\faGithub\ zcanast} \ $|$ \ 
+\href{https://linkedin.com/in/zoey-anastasiadis}{\raisebox{-0.05\height}\faLinkedin\ zoey-anastasiadis} \ $|$ \ 
+\href{https://zcanast.github.io/portfolio}{\raisebox{-0.05\height}\faGlobe \ zcanast.github.io/portfolio} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+% Experience
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Stanley Leadership Program - Information Technology} &  \hfill July 2023 - Present \\ 
+Stanley Black \& Decker | Remote \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=1pt]
+        \item Co-lead of Sustainable Development Committee, member of Engagement Committee
+    \end{itemize}
+    \end{minipage}
+}\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{4th Rotation: GenAI App Architecture} &  \hfill January 2025 - Present \\  
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=3pt]
+        \item Skills used: GenAI, prompt engineering, app architecture, SQL, Excel (pivot tables), Snowflake, YAML
+    \end{itemize}
+    \end{minipage}
+}\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{3rd Rotation: Data Architect, Enterprise Data - Platform Engineering} &  \hfill July 2024 - January 2025 \\ 
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=3pt]
+        \item Calculated 8 KPIs through Snowflake SQL scripts and Python scripts calling the dbt Cloud API
+        \item Created a Power BI dashboard of the KPIs for leadership to visualize usage trends, saving ~40 hours per month
+        \item Evaluated AWS WorkSpaces to find and delete unused WorkSpaces, saving \$20,000 per year
+    \end{itemize}
+    \end{minipage}
+}\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{2nd Rotation: Architecture Process Engineer, Enterprise Architecture} &  \hfill January 2024 - July 2024 \\ 
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=3pt]
+        \item Documented current state architecture for SBD capability areas using Ardoq
+        \item Developed a Python script to enhance application data, increasing completion score from 30\% to 63\%
+        \item Implemented a generative AI solution, saving 650 productivity hours
+    \end{itemize}
+    \end{minipage}
+}\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{1st Rotation: Process Analyst, IT Process} &  \hfill July 2023 - January 2024 \\ 
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep, leftmargin=1em, itemsep=3pt]
+        \item Conduct comprehensive data analysis to identify trends and opportunities for improvement
+        \item Propose a LEAN repeatable process for regular analysis of lessons learned data
+        \item Utilize data-driven presentations to foster a culture of evidence-based decision-making
+    \end{itemize}
+    \end{minipage}
+}\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{iSchool Undergraduate Assistant for Research Programs} &  \hfill January 2022 - May 2023 \\ 
+University of Maryland, College of Information Studies | College Park, MD \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Facilitate research-related communications for the Associate Dean of Research
+        \item Gather, analyze, and interpret research-related data for effective decision-making
+        \item Update websites using WordPress and maintain high-quality online resources
+    \end{itemize}
+    \end{minipage}
+}\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Technology Intern} &  \hfill June 2022 - August 2022 \\
+Stanley Black \& Decker | Remote \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Coordinate and manage 9 training sessions for 450+ IT employees
+        \item Produce engaging explainer videos using Powtoon for IT role facilitation
+        \item Design Mentimeter questionnaires and analyze live polling results
+    \end{itemize}
+    \end{minipage}
+}\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{University of Maryland} | College Park, MD &  \hfill \normalsize May 2023 \\
+Bachelor of Science in Information Science & \hfill \\ 
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+\textbf{Languages} & \normalsize
+\tag{Python}
+\tag{Java}
+\tag{R} 
+\tag{SQL}
+\tag{HTML/CSS}
+\tag{JavaScript}
+\tag{Visual Basic}
+\tag{MATLAB}
+\tag{YAML}
+\\
+
+\textbf{Technologies}  &  \normalsize{
+\tag{Excel}
+\tag{AWS}
+\tag{GitHub}
+\tag{Microsoft Office}
+\tag{Google Suite}
+\tag{WordPress}
+\tag{Tableau}
+\tag{Power BI}
+\tag{Snowflake}
+\tag{Zenlytic}
+\tag{Revefi}
+\tag{Ataccama}
+\tag{dbt Cloud}
+\tag{SharePoint}
+\tag{Power Automate}
+\tag{Power Query}
+\tag{Adobe Premiere Pro}
+\tag{Adobe Photoshop}
+\tag{Canva}
+\tag{Jira}
+\tag{Miro}
+\tag{Open AI}
+\tag{Figma}
+\tag{Gephi}
+\tag{Powtoon}
+}\\
+
+\textbf{Environments}  &  \normalsize{
+\tag{Visual Studio Code}
+\tag{Eclipse}
+\tag{MySQL}
+\tag{RStudio}
+\tag{Jupyter Notebooks}
+}\\
+
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
