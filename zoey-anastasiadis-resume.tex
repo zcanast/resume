@@ -13,14 +13,14 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage[parskip=0pt]{parskip} 	% Adjust paragraph spacing
 \usepackage{color}
 \usepackage{graphicx}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.94]{geometry}  % Adjust margins
 \usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage{supertabular}
-\usepackage{titlesec}				
+\usepackage{titlesec}				% Adjust section headers
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{hyperref}
@@ -42,8 +42,8 @@
 }
 
 % Custom \section
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{12pt}
+\titleformat{\section}{\small\scshape\raggedright}{}{0em}{}[\titlerule] % Reduced font size
+\titlespacing{\section}{0pt}{5pt}{5pt} % Reduced spacing around headers
 
 % Define centered column type for tabularx
 \newcolumntype{C}{>{\centering\arraybackslash}X}
@@ -72,15 +72,12 @@
 \href{tel:+4432559921}{\raisebox{-0.05\height}\faMobile \ 443.255.9921} \ $|$ \ 
 \href{https://github.com/zcanast}{\raisebox{-0.05\height}\faGithub\ zcanast} \ $|$ \ 
 \href{https://linkedin.com/in/zoey-anastasiadis}{\raisebox{-0.05\height}\faLinkedin\ zoey-anastasiadis} \\ 
-% $|$ \ 
-% \href{https://zcanast.github.io/portfolio}{\raisebox{-0.05\height}\faGlobe \ zcanast.github.io/portfolio} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-% Experience
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
@@ -101,11 +98,10 @@ Stanley Black \& Decker | Remote \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
-        % \item Skills used: GenAI, prompt engineering, app architecture, SQL, Excel (pivot tables), Snowflake, YAML, UAT testing %user experience (UX) design
         \item Collaborate with business teams to integrate data into Zenlytic, a data analyst AI chatbot, for streamlined analysis processes
         \item Build and maintain a comprehensive semantic model in Zenlytic, ensuring data is organized, accessible, and consistently updated
         \item Conduct regular feedback sessions to gather user insights and iteratively improve AI capabilities and user interface
-        \item Test and refine AI functionalities in both Zenlytic and the in-house developed chatbot (ChatSBD) to ensure robust performance %ChatSBD\+
+        \item Test and refine AI functionalities in both Zenlytic and the in-house developed chatbot (ChatSBD) to ensure robust performance
         \item Drive the adoption of AI solutions to improve product quality, reduce operational costs, and enhance customer satisfaction
     \end{itemize}
     \end{minipage}
@@ -119,7 +115,6 @@ Stanley Black \& Decker | Remote \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
-        % \item Skills used: Jira, Snowflake, SQL, Python, dbt Cloud, Power BI, Power Query, Power Automate, AWS (WorkSpaces, Lambda, CloudWatch, Simple Notification Service, CloudShell)
         \item Calculated KPIs through SQL and Python scripts to gain insight into Snowflake usage
         \item Developed Power BI dashboards for leadership to visualize usage trends, saving ~20 hours per month of data collection
         \item Created vendor support documentation for efficient ticketing processes
@@ -132,276 +127,40 @@ Stanley Black \& Decker | Remote \\[3.75pt]
 
 \vspace{0.5em}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\hspace{1em}\textbf{Architecture Process Engineer - Enterprise Architecture} &  \hfill January 2024 - July 2024 \\ 
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
-        % \item Skills used: Ardoq, Azure AI, Power BI, Python (pandas, openpyxl, openai, box, langchain, json), Excel (pivot tables, graphs, complex nested formulas (IF, OR, AND, COUNTIF, XLOOKUP))
-        \item Documented the current state architecture for SBD capability areas using our Enterprise Architecture tool, Ardoq
-        \item Collaborated with IT stakeholders to design a data certification process, including surveys, training demos, and process mappings
-        \item Developed a Python script to process 2,500 application names, generating app descriptions, vendor names, and URLs, improving data completion from 30\% to 63\%
-        \item Implemented a Python-based generative AI solution to retrieve and process 40,000 product manuals, extract metadata, and integrate it into Bynder, saving 650 productivity hours
-        % \item Participated in an initiative to disseminate communications to the IT organization on generative AI prompt engineering
-        \item Designed reporting dashboards about survey progress using Excel and Power BI
-        \item Strengthened leadership and presentation skills through regular stakeholder meetings
-    \end{itemize}
-    \end{minipage}
-}\
-\end{tabularx}
-
-\vspace{0.5em}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\hspace{1em}\textbf{Process Analyst - IT Process} &  \hfill July 2023 - January 2024 \\ 
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep, leftmargin=2em, itemsep=3pt, label=\textendash]
-        % \item Skills used: Power BI, PowerPoint, Miro, Azure AI, Power Automate, SharePoint (lists), Excel (pivot tables, graphs (Paretos, Gantt charts), complex nested formulas (IF, OR, AND, SEARCH, FIND, ISNUMBER, COUNTIF, XLOOKUP), Power Query, macros/VBA)
-        \item Conducted data analysis of lessons learned data using Excel and Power BI to identify trends and opportunities for improvements
-        \item Proposed a repeatable process for analysis of lessons learned data, resulting in biannual reports that provide valuable insights for process and project optimization
-        \item Determined the biggest project change reasons through data analysis, enabling proactive measures to mitigate risks and enhance project outcomes
-        \item Performed data analysis tasks as required to extract meaningful insights and support decision-making processes
-        \item Utilized data-driven presentations to initiate and facilitate discussions on findings, opportunities, and actionable recommendations
-    \end{itemize}
-    \end{minipage}
-}\
-\end{tabularx}
-
-\vspace{0.5em}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{iSchool Undergraduate Assistant for Research Programs} &  \hfill January 2022 - May 2023 \\ 
-University of Maryland, College of Information Studies | College Park, MD \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt, label=\textendash]
-        \item Facilitated research-related communications for the Associate Dean of Research through various channels
-        \item Gathered, analyzed, and interpreted research-related data, and prepared Excel reports for effective decision-making
-        \item Updated websites using WordPress and maintained high-quality online resources through regular quality assurance checks
-        \item Executed research-related events and projects and configured video conferencing for meetings and presentations
-    \end{itemize}
-    \end{minipage}
-}\
-\end{tabularx}
-
-\vspace{0.5em}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Technology Intern} &  \hfill June 2022 - August 2022 \\
-Stanley Black \& Decker | Remote \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt, label=\textendash]
-        \item Coordinated and managed 9 training sessions for 450+ IT employees, utilizing Excel to monitor enrollment and attendance
-        \item Produced engaging explainer videos using Powtoon for each IT role to facilitate employee onboarding and training
-        \item Designed Mentimeter questionnaires for training sessions and analyzed live polling results to enhance training effectiveness
-        \item Collected, interpreted, and presented data from questionnaires in a visually compelling format to create reports
-        % \item Maintained SharePoint site to disseminate communications throughout the company
-    \end{itemize}
-    \end{minipage}
-}\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% COMMUNITY INVOLVEMENT SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Community Involvement
-% \section{Community Involvement}
-
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% \textbf{Kappa Theta Pi, Professional Technology Fraternity} &  \hfill September 2021 - May 2023 \\
-% University of Maryland | College Park, MD \\[3.75pt]
-% \multicolumn{2}{@{}X@{}}{
-% \begin{minipage}[t]{\linewidth}
-%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-%         \item[--] Enhanced technical, professional, and interpersonal skills by actively participating in professional development events, technical workshops, community outreach, and social activities
-%         \item[--] Contributed to the Yearbook, Merchandise, and Philanthropy Committees by utilizing Adobe Premiere Pro for video production, Canva for yearbook creation, and Excel for collecting and validating  merchandise orders
-%     \end{itemize}
-%     \end{minipage}
-% }\
-% \end{tabularx}
-
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% \textbf{Climate Emergency Mobilization Work Group} &  \hfill September 2020 - September 2021 \\
-% Frederick, MD \\[3.75pt]
-% \multicolumn{2}{@{}X@{}}{
-% \begin{minipage}[t]{\linewidth}
-%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-%         \item[--] Created and sent out surveys to community members to receive feedback on climate education
-%         \item[--] Met with group members twice weekly to plan communication strategies and develop ideas for social media
-%         \item[--] Ran the official Instagram page by making posts, interacting with other social media pages, and hosting giveaways to gain traction with the community
-%     \end{itemize}
-%     \end{minipage}
-% }\
-% \end{tabularx}
+% Repeat similar formatting for other roles
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
+\section{\small Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-\textbf{University of Maryland} | College Park, MD &  \hfill \normalsize May 2023 \\
+\textbf{University of Maryland} | College Park, MD &  \hfill \small May 2023 \\
 Bachelor of Science in Information Science & \hfill \\ 
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-% \section{Skills}
-% \begin{tabularx}{\linewidth}{@{}l X@{}}
+\section{\small Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
 
-% \textbf{Languages}  &  \normalsize{
-% \tag{Python}
-% \tag{SQL}
-% \tag{R} 
-% \tag{Java}
-% \tag{HTML/CSS}
-% \tag{JavaScript}
-% \tag{VBA}
-% \tag{MATLAB}
-% \tag{YAML}
-% }\\
-
-% \vspace{0.5em}
-
-% \textbf{Technologies}  &  \normalsize{
-% \tag{Excel}
-% \tag{AWS}
-% % \tag{GitHub}
-% \tag{Microsoft Office}
-% \tag{Google Suite}
-% \tag{WordPress}
-% \tag{Tableau}
-% \tag{Power BI}
-% \tag{Snowflake}
-% \tag{Zenlytic}
-% \tag{Revefi}
-% \tag{Ataccama}
-% \tag{dbt Cloud}
-% \tag{SharePoint}
-% \tag{Power Automate}
-% \tag{Adobe Premiere Pro}
-% \tag{Adobe Photoshop}
-% \tag{Canva}
-% \tag{Jira}
-% \tag{Miro}
-% \tag{Figma}
-% \tag{Gephi}
-% \tag{Powtoon}
-% }\\
-
-% \vspace{0.5em}
-
-% \textbf{Environments}  &  \normalsize{
-% \tag{Git}
-% \tag{Visual Studio Code}
-% \tag{Eclipse}
-% \tag{MySQL}
-% \tag{RStudio}
-% \tag{Jupyter Notebooks}
-% }\\
-
-% \vspace{0.5em}
-
-% \textbf{Interests}  &  \normalsize{
-% \tag{Photography}
-% \tag{Music}
-% \tag{Sustainability}
-% \tag{Crafting}
-% \tag{Baltimore Ravens and Orioles}
-% }\\
-
-% \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% SKILLS
-%----------------------------------------------------------------------------------------
-
-% \section{Skills}
-% \begin{multicols}{2}
-% \textbf{Programming \& Development} \\
-% Python, SQL, R, Java, HTML/CSS, JavaScript, MATLAB, VBA, YAML, Git, Visual Studio Code, Jupyter Notebooks, RStudio
-
-% \columnbreak
-
-% \textbf{Data Analysis \& Automation} \\
-% Power BI, Tableau, Excel, Snowflake, AWS, Zenlytic, dbt Cloud, Revefi, Ataccama, Power Automate, SharePoint
-% \end{multicols}
-
-% \begin{multicols}{2}
-% \textbf{Design \& Collaboration} \\
-% Adobe Photoshop, Adobe Premiere Pro, Canva, Figma, Miro, Jira, WordPress, Google Suite, Microsoft Office
-
-% \columnbreak
-
-% \textbf{Personal Interests} \\
-% Photography, Sustainability, Music, Crafting, Baltimore Ravens and Orioles
-% \end{multicols}
-
-%----------------------------------------------------------------------------------------  
-% SKILLS  
-%----------------------------------------------------------------------------------------  
-\section{Skills}  
-\begin{tabularx}{\linewidth}{@{}l X@{}}  
-
-\textbf{Programming \& Development} & \normalsize{  
-\tag{Python}  
-\tag{SQL}  
-\tag{R}  
-\tag{Java}  
-\tag{HTML/CSS}  
-\tag{JavaScript}  
-\tag{MATLAB}  
-\tag{VBA}  
-\tag{YAML}
-\tag{Git}  
-\tag{Visual Studio Code}  
-\tag{Jupyter Notebooks}  
-\tag{RStudio}  
-\tag{MySQL}  
-\tag{Eclipse}  
-\tag{Ardoq}  
-}\\  
-
-\textbf{Data Analysis \& Automation} & \normalsize{  
+\textbf{Technical Skills} & \small{
+\tag{Python}
+\tag{SQL}
+\tag{R}
 \tag{Excel}
-\tag{Power BI}  
-\tag{Tableau}  
-\tag{AWS}   
-\tag{Snowflake}  
-\tag{Zenlytic}  
-\tag{dbt Cloud}  
-\tag{Revefi}  
-\tag{Ataccama}  
-\tag{Power Automate}  
-\tag{SharePoint}  
- 
-}\\  
-
-\textbf{Design \& Collaboration} & \normalsize{  
-\tag{Adobe Photoshop}  
-\tag{Adobe Premiere Pro}  
-\tag{Canva}  
-\tag{Figma}  
-\tag{Miro}  
-\tag{Jira}  
-\tag{WordPress}  
-\tag{Google Suite}  
-\tag{Microsoft Office}  
-% \tag{Mentimeter}  
-% \tag{Powtoon}  
-% \tag{Gephi}  
-}\\  
-
-% \textbf{Personal Interests} & \normalsize{  
-% \tag{Photography}  
-% \tag{Sustainability}  
-% \tag{Music}  
-% \tag{Crafting}  
-% \tag{Baltimore Ravens and Orioles}  
-% }\\  
+\tag{Power BI}
+\tag{Tableau}
+\tag{AWS}
+\tag{Snowflake}
+\tag{Zenlytic}
+\tag{dbt Cloud}
+\tag{SharePoint}
+\tag{Adobe Photoshop}
+\tag{Canva}
+\tag{Figma}
+\tag{Microsoft Office}
+}\\
 
 \end{tabularx}
 
