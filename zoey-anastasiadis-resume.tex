@@ -44,9 +44,14 @@
 
 % Tag (framed word or phrase)
 \colorlet{body}{black!80!white}
+% \newcommand{\tag}[1]{%
+%   \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+% }
+
 \newcommand{\tag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+  \tikz[baseline=-0.5ex]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep=0.5ex,text height=1.5ex,text depth=.25ex]{#1};
 }
+
 
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
