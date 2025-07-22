@@ -44,12 +44,8 @@
 
 % Tag (framed word or phrase)
 \colorlet{body}{black!80!white}
-% \newcommand{\tag}[1]{%
-%   \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
-% }
-
 \newcommand{\tag}[1]{%
-  \tikz[baseline=-0.5ex]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep=0.5ex,text height=1.5ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
 
@@ -68,13 +64,13 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Anita Anastasiadis} \\[7.0pt]
 \href{mailto:anita.anastasiadis@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ anita.anastasiadis@gmail.com} \ $|$ \ 
-% \href{tel:+14436776182}{\raisebox{-0.05\height}\faMobile \ 443.677.6182} \\ 
-% 5044 Forge Haven Drive \ $|$ \ Perry Hall, Maryland 21128 \\ 
-% \end{tabularx}
-
-\href{tel:+14436776182}{\raisebox{-0.05\height}\faMobile \ 443.677.6182} \ $|$ \ 
-5044 Forge Haven Drive, Perry Hall, Maryland 21128 \\ 
+\href{tel:+14436776182}{\raisebox{-0.05\height}\faMobile \ 443.677.6182} \\ 
+5044 Forge Haven Drive \ $|$ \ Perry Hall, Maryland 21128 \\ 
 \end{tabularx}
+
+% \href{tel:+14436776182}{\raisebox{-0.05\height}\faMobile \ 443.677.6182} \ $|$ \ 
+% 5044 Forge Haven Drive, Perry Hall, Maryland 21128 \\ 
+% \end{tabularx}
 
 
 %----------------------------------------------------------------------------------------
