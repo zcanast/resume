@@ -44,12 +44,8 @@
 
 % Tag (framed word or phrase)
 \colorlet{body}{black!80!white}
-% \newcommand{\tag}[1]{%
-%   \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
-% }
-
 \newcommand{\tag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=0.5ex,inner ysep=0.4ex,text height=1.5ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
 %----------------------------------------------------------------------------------------
@@ -179,6 +175,13 @@ Bachelor of Business Administration, Business Management & \hfill \\
 
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
+
+\textbf{Core Competencies} & 
+\begin{minipage}[t]{\linewidth}
+\raggedright
+\tag{Configuration} \tag{Claims Mgmt} \tag{Leadership} \tag{Process Opt.} \tag{Compliance} \tag{Decision-Making} \tag{Team Building} \tag{Project Mgmt} \tag{Stakeholder Comm.}
+\end{minipage}
+\\
 
 \textbf{Core Competencies} & \normalsize{
 \tag{System Configuration}
